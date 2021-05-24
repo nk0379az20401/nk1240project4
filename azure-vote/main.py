@@ -30,7 +30,7 @@ middleware = FlaskMiddleware(
 
 # Logging
 logger = logging.getLogger(__name__)
-logger.addHandler(AzureLogHandler(connection_string='InstrumentationKey=631abff1-59bf-460a-8968-b620d62e520b'))
+logger.addHandler(AzureEventHandler(connection_string='InstrumentationKey=631abff1-59bf-460a-8968-b620d62e520b'))
 
 # Metrics TODO: Setup exporter
 exporter = metrics_exporter.new_metrics_exporter(
