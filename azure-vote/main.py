@@ -81,8 +81,8 @@ def index():
         # Get current values
         vote1 = r.get(button1).decode('utf-8')
         with tracer.span(name="CatsVote"):
-	    print('CatsVote')
-               
+            print('CatsVote')
+
         vote2 = r.get(button2).decode('utf-8')
         with tracer.span(name="DogsVote"):
             print('DogsVote')
